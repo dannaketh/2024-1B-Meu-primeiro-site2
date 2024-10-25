@@ -11,6 +11,7 @@
 --salmão-rosa: #e5989bff;
 --rosa-velha: #b5838dff;
 --cinza-escuro: #6d6875ff;
+--preto: #000000
 --fonte-titulo:"Pacifico", cursive;
 --fonte-texto: "Cormorant Garamond", serif;
 }
@@ -24,7 +25,7 @@ body{
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background-color: var(--salmão);
+   background-color: var(--salmão-rosa);
 }
 
 .cabecalho-logo{
@@ -35,12 +36,45 @@ body{
 
 .cabecalho-link{
    text-decoration: none;
-   color: var(--rosa-velha);
-   font-size: 2em;
+   color: var(--melão);
+   font-size: 1.5em;
    margin-right: 1em;
 }
 .cabecalho-link:hover{
-   color: var(--salmão-rosa);
+   color: var(--cinza-escuro);
    font-size: 1.9em;
    transition: 0.3s;
+}
+.principal-capa{
+   background-color: var(--salmao);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1.5em;
+   margin-bottom: 1em;
+}
+.principal-capa_titulo{
+   font-size: 5em;
+   font-family: var(--fonte-titulo);
+}
+.principal-capa_texto{
+   font-size: 2em;
+}
+.principal-capa-imagem{
+   width: 30% ;
+   border-radius: 10px;
+}
+.principal-capa_combotao{
+   display: flex;
+   flex-direction: column;
+}
+
+.principal-capa_botao{
+   background-color: var(--rosa-velha);
+   text-decoration: none;
+   padding: 1.3em;
+   color: var(--preto);
+   margin-top: 2em;
+   border-radius: 10px;
+   font-size: 1em;
 }
